@@ -1893,7 +1893,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #5d5d5d;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
