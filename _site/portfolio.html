@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'picto-primary': '#a94107',
+                        'picto-primary-dark': '#803105',
+                        'soft-white': '#f0f1f3',
+                        'soft-dark': '#87909d',
+                    },
+                    fontFamily: {
+                        sans: ['Work Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-900 text-gray-300">
+    <header class="sticky top-0 bg-gray-900 border-b border-gray-800 z-50 transition-all duration-300">
+    <div class="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-800 rounded-box w-52 text-gray-300">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/about/" class="hover:text-white">About</a></li>
+                    <li><a href="/portfolio/" class="hover:text-white">Portfolio</a></li>
+                    <li><a href="/contact/" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <a href="/" class="flex items-center gap-2 text-xl font-bold text-white">
+                <img src="https://picsum.photos/seed/logo/40/40" alt="Logo" class="h-10 w-10 rounded-xl" />
+                <span>SG</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-base text-gray-300">
+                <li><a href="/" class="hover:text-white hover:bg-gray-800">Home</a></li>
+                <li><a href="/about/" class="hover:text-white hover:bg-gray-800">About</a></li>
+                <li><a href="/portfolio/" class="hover:text-white hover:bg-gray-800">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="/contact/" class="btn bg-picto-primary text-white hover:bg-picto-primary-dark border-none">Contact Me</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main class="flex-grow">
+        <div class="py-20 bg-gray-900 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-picto-primary font-semibold text-xl mb-2">My Work</h2>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Recent Projects</h1>
+            <div class="text-lg text-gray-300">
+                <p>Here are some of the projects I’ve worked on recently. Each project represents a unique challenge and a tailored solution.</p>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <div class="bg-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-gray-700">
+                <div class="overflow-hidden h-64">
+                    <img src="https://picsum.photos/seed/project1/800/600" alt="E-commerce Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-8">
+                    <span class="text-sm font-semibold text-picto-primary uppercase tracking-wider">Web App</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-3 text-white">E-commerce Dashboard</h3>
+                    <p class="text-gray-400 mb-6">A comprehensive analytics dashboard for online retailers to track sales, inventory, and customer behavior.</p>
+                    <a href="#" class="text-picto-primary font-medium hover:text-picto-primary-dark flex items-center gap-2">
+                        View Project
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-gray-700">
+                <div class="overflow-hidden h-64">
+                    <img src="https://picsum.photos/seed/project2/800/600" alt="SaaS Landing Page" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-8">
+                    <span class="text-sm font-semibold text-picto-primary uppercase tracking-wider">Marketing Site</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-3 text-white">SaaS Landing Page</h3>
+                    <p class="text-gray-400 mb-6">A high-converting landing page designed for a new software startup, featuring interactive animations.</p>
+                    <a href="#" class="text-picto-primary font-medium hover:text-picto-primary-dark flex items-center gap-2">
+                        View Project
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <footer class="bg-gray-950 text-white py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+            <img src="https://picsum.photos/seed/logo/40/40" alt="Logo" class="h-10 w-10 rounded-xl" />
+            <span class="text-2xl font-bold">Sarthak Ganguly</span>
+        </div>
+        <div class="text-center md:text-left text-gray-400">
+            <p>&copy; 2026 Sarthak Ganguly. All rights reserved.</p>
+        </div>
+        <div class="flex gap-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+title: "Sarthak Ganguly"
+description: "My personal portfolio built with Jekyll and Picto theme"
+url: "https://sarthakganguly.github.io" 
+baseurl: ""
+
+theme: minima
+
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md

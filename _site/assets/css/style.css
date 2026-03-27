@@ -1,0 +1,14 @@
+.btn-primary {
+  background-color: #a94107 !important;
+  border-color: #a94107 !important;
+  color: white !important;
+}
+.btn-primary:hover {
+  background-color: #803105 !important;
+  border-color: #803105 !important;
+}
+.introduction-profile-background {
+  background: radial-gradient(circle at 12% 100%, rgba(255, 226, 176, 0.05) 1% 5px, transparent 15%),
+              radial-gradient(circle at 95% -15%, rgba(218, 77, 241, 0.1) 5%, transparent 30%),
+              radial-gradient(circle at center right, rgba(196, 245, 233, 0.05) 2%, transparent 35%);
+}

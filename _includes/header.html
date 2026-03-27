@@ -1,0 +1,33 @@
+<header class="sticky top-0 bg-gray-900 border-b border-gray-800 z-50 transition-all duration-300">
+    <div class="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-800 rounded-box w-52 text-gray-300">
+                    <li><a href="{{ '/' | relative_url }}" class="hover:text-white">Home</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}" class="hover:text-white">About</a></li>
+                    <li><a href="{{ '/portfolio/' | relative_url }}" class="hover:text-white">Portfolio</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <a href="{{ '/' | relative_url }}" class="flex items-center gap-2 text-xl font-bold text-white">
+                <img src="https://picsum.photos/seed/logo/40/40" alt="Logo" class="h-10 w-10 rounded-xl" />
+                <span>SG</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-base text-gray-300">
+                <li><a href="{{ '/' | relative_url }}" class="hover:text-white hover:bg-gray-800">Home</a></li>
+                <li><a href="{{ '/about/' | relative_url }}" class="hover:text-white hover:bg-gray-800">About</a></li>
+                <li><a href="{{ '/portfolio/' | relative_url }}" class="hover:text-white hover:bg-gray-800">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="{{ '/contact/' | relative_url }}" class="btn bg-picto-primary text-white hover:bg-picto-primary-dark border-none">Contact Me</a>
+        </div>
+    </div>
+</header>
