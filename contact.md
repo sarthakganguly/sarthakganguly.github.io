@@ -1,6 +1,7 @@
 ---
 layout: contact
 title: Contact
+permalink: /contact/
 subtitle: Get In Touch
 headline: Let's Work Together
 email: hello@example.com

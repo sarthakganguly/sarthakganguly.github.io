@@ -2,6 +2,7 @@
 layout: about
 title: About Me
 subtitle: About Me
+permalink: /about/
 headline: I craft digital solutions with passion
 image: https://picsum.photos/seed/workspace/600/500
 skills:

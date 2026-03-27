@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Portfolio
+permalink: /portfolio/
 subtitle: My Work
 headline: Recent Projects
 projects:
